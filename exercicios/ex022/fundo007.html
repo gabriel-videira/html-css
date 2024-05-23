@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamento absoluto</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 94vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%)
+
+            /* Modo de centralizar caixas verticalmente:
+            
+            position: relative; (no container)
+            Position: absolute; (no conteúdo)
+
+            left: (valor em px ou %)
+            top: (valor em px ou %)
+
+            transform: translate (valor em px ou %)
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
